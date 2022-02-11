@@ -1,7 +1,7 @@
 /*global require, global*/
 
 var _ = require('lodash');
-var blessed = require('blessed');
+var blessed = require('neo-blessed');
 var through2 = require('through2');
 
 module.exports = {
