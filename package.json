@@ -1,6 +1,6 @@
 {
   "name": "base-widget",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Editor widget used by slap-editor/slap",
   "main": "index.js",
   "scripts": {
@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/slap-editor/base-widget#readme",
   "dependencies": {
-    "blessed": "0.1.81",
+    "neo-blessed": "0.2.0",
     "bluebird": "3.5.5",
-    "lodash": "4.17.15",
+    "lodash": "4.17.21",
     "rc": "1.2.8",
-    "slap-util": "git+https://github.com/cancerberoSgx/slap-util.git",
-    "text-buffer": "^13.17.0",
+    "slap-util": "git+https://github.com/ajstrand/slap-util.git",
+    "text-buffer": "^13.18.6",
     "through2": "3.0.1"
   }
 }
