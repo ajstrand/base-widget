@@ -22,7 +22,7 @@
     "lodash": "4.17.21",
     "rc": "1.2.8",
     "slap-util": "git+https://github.com/ajstrand/slap-util.git",
-    "text-buffer": "git+https://git@github.com/ajstrand/text-buffer.git#master",
+    "text-buffer": "git+https://git@github.com/ajstrand/text-buffer.git#main",
     "through2": "3.0.1"
   }
 }
