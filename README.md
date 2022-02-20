@@ -1,2 +1,2 @@
 # base-widget
-Editor widget used by slap-editor/slap
+Editor widget used by ajstrand/slap
