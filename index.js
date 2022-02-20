@@ -1,1 +1,1 @@
-module.exports = require('./lib/BaseWidget');
+export { default } from "./lib/BaseWidget";
