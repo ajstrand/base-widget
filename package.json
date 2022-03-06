@@ -1,28 +1,60 @@
 {
   "name": "base-widget",
-  "version": "1.1.1",
-  "description": "Editor widget used by slap-editor/slap",
+  "version": "1.1.2",
+  "description": "Editor widget used by ajstrand/slap",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "trash": "trash build",
+    "gulp": "trash dist && gulp",
+    "clean-run": "npm run gulp && node dist/example.js",
+    "example": "node dist/example.js",
+    "internal": "node example.js",
+    "lint": "eslint .",
+    "format": "prettier-eslint \"lib/**/*.js\"",
+    "dashboard": "npx eslint-interactive lib/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slap-editor/base-widget.git"
+    "url": "git+https://github.com/ajstrand/base-widget.git"
   },
   "author": "Dan Kaplun <dbkaplun@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/slap-editor/base-widget/issues"
+    "url": "https://github.com/ajstrand/base-widget/issues"
   },
-  "homepage": "https://github.com/slap-editor/base-widget#readme",
+  "homepage": "https://github.com/ajstrand/base-widget#readme",
   "dependencies": {
-    "neo-blessed": "0.2.0",
     "bluebird": "3.7.2",
     "lodash": "4.17.21",
+    "neo-blessed": "0.2.0",
     "rc": "1.2.8",
     "slap-util": "git+https://github.com/ajstrand/slap-util.git",
     "text-buffer": "git+https://git@github.com/ajstrand/text-buffer.git#main",
     "through2": "3.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/register": "7.17.0",
+    "@mizdra/eslint-interactive": "^8.1.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier":"^8.5.0",
+    "eslint-config-problems": "^6.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1",
+    "prettier": "^2.5.1",
+    "prettier-eslint-cli": "^5.0.1"
   }
 }
