@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/ajstrand/base-widget#readme",
   "dependencies": {
+    "fs-extra":"^10.0.1",
     "bluebird": "3.7.2",
     "lodash": "4.17.21",
     "neo-blessed": "0.2.0",
