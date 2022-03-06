@@ -2,7 +2,6 @@ import gulp from "gulp"
 //import rename from "gulp-rename"
 import pkg from "gulp-uglify-es"
 const uglify = pkg.default
-//import { init, write } from 'gulp-sourcemaps';
 //import babel from "gulp-babel"
 function defaultTask(cb) {
   cb()
