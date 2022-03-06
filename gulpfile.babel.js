@@ -5,7 +5,6 @@ const uglify = pkg.default
 //import { init, write } from 'gulp-sourcemaps';
 //import babel from "gulp-babel"
 function defaultTask(cb) {
-  // place code for your default task here
   cb()
   // src('lib/**/*.js')
   // .pipe(init())
@@ -14,15 +13,15 @@ function defaultTask(cb) {
   // .pipe(write())
   // .pipe(dest('dist'));
 
-  gulp
-    .src("example.js")
-    // .pipe(babel({
-    //     presets: ['@babel/env']
-    // }))
-    .pipe(uglify())
-    //.pipe(rename('example.cjs'))
+  // gulp
+  //   .src("example.js")
+  //   // .pipe(babel({
+  //   //     presets: ['@babel/env']
+  //   // }))
+  //   .pipe(uglify())
+  //   //.pipe(rename('example.cjs'))
 
-    .pipe(gulp.dest("dist"))
+  //   .pipe(gulp.dest("dist"))
 
   gulp
     .src("index.js")
@@ -31,14 +30,6 @@ function defaultTask(cb) {
     // }))
     .pipe(uglify())
     .pipe(gulp.dest("dist"))
-
-  gulp
-    .src("lib/highlight/*.js")
-    // .pipe(babel({
-    //     presets: ['@babel/env']
-    // }))
-    .pipe(uglify())
-    .pipe(gulp.dest("dist/lib/highlight"))
 
   gulp
     .src("lib/*.js")
@@ -56,7 +47,7 @@ function defaultTask(cb) {
     .pipe(gulp.dest("dist/"))
 
   gulp
-    .src("editor-widget.ini")
+    .src("*.ini")
     // .pipe(babel({
     //     presets: ['@babel/env']
     // }))
