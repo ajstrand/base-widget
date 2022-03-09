@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "trash": "trash build",
+    "build":"trash dist && babel lib/ --out-dir dist/cjs/ && mkdir dist/mjs/ && bash  ./fixup.sh",
     "gulp": "trash dist && gulp",
     "clean-run": "npm run gulp && node dist/example.js",
     "example": "node dist/example.js",
