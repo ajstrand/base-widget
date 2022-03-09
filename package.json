@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "trash": "trash build",
-    "build":"trash dist && babel lib/ --out-dir dist/cjs/ && mkdir dist/mjs/ && bash  ./fixup.sh",
+    "build": "trash dist && babel lib/ --out-dir dist/cjs/ && mkdir dist/mjs/ && bash  ./fixup.sh",
     "gulp": "trash dist && gulp",
     "clean-run": "npm run gulp && node dist/example.js",
     "example": "node dist/example.js",
@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/ajstrand/base-widget#readme",
   "dependencies": {
-    "fs-extra":"^10.0.1",
     "bluebird": "3.7.2",
+    "fs-extra": "^10.0.1",
     "lodash": "4.17.21",
     "neo-blessed": "0.2.0",
     "rc": "1.2.8",
@@ -39,12 +39,14 @@
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/register": "7.17.0",
     "@mizdra/eslint-interactive": "^8.1.0",
+    "babel-plugin-transform-import-meta": "^2.1.1",
     "eslint": "^8.10.0",
-    "eslint-config-prettier":"^8.5.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-problems": "^6.0.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^26.1.1",
@@ -57,6 +59,7 @@
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
     "prettier": "^2.5.1",
-    "prettier-eslint-cli": "^5.0.1"
+    "prettier-eslint-cli": "^5.0.1",
+    "regenerator-runtime": "^0.13.9"
   }
 }
